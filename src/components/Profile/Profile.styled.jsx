@@ -61,7 +61,7 @@ export const StatsItem = styled.li`
   width: 100px;
   height: 60px;
   background-color: #e1e7eb;
-  border: 0.5px solid #0000007a;
+  border: 0.5px solid #00000035;
 
   &:first-child {
     border-bottom-left-radius: 6px;

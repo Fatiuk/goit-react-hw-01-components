@@ -1,5 +1,10 @@
+// ============ Profile (Task 01) ============
 import Profile from './Profile';
 import user from './Profile/user.json';
+
+// ============ Statistics (Task 02) ============
+import data from './Statistics/data.json';
+import Statistics from './Statistics';
 
 const App = () => {
   return (
@@ -13,6 +18,7 @@ const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
+      <Statistics title="Upload stats" data={data} />
     </>
   );
 };

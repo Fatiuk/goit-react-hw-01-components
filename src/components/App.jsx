@@ -18,7 +18,7 @@ const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistics title="Upload stats" data={data} />
+      <Statistics title="Upload stats" stats={data} />
     </>
   );
 };

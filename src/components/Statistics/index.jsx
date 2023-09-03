@@ -9,18 +9,18 @@ import {
   StatPercentage,
 } from './Statistics.styled';
 
-const Statistics = ({ title, data }) => {
+const Statistics = ({ title, stats }) => {
   return (
     <StatSection>
       {title && <StatTitle>{title}</StatTitle>}
       <StatList>
-        {data.map(data => (
+        {stats.map(stats => (
           <StatItem
-            key={data.id}
+            key={stats.id}
             style={{ backgroundColor: generatePastelColor() }}
           >
-            <StatLabel>{data.label}</StatLabel>
-            <StatPercentage>{data.percentage}%</StatPercentage>
+            <StatLabel>{stats.label}</StatLabel>
+            <StatPercentage>{stats.percentage}%</StatPercentage>
           </StatItem>
         ))}
       </StatList>
@@ -30,7 +30,7 @@ const Statistics = ({ title, data }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  data: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,

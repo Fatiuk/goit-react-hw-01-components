@@ -6,9 +6,13 @@ import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import Statistics from './Statistics';
 
-// ============ Statistics (Task 03) ============
+// ============ FriendList (Task 03) ============
 import friends from './FriendList/friends.json';
 import FriendList from './FriendList';
+
+// ============ Transaction (Task 04) ============
+import transactions from './Transaction/transactions.json';
+import TransactionHistory from './Transaction';
 
 const App = () => {
   return (
@@ -24,6 +28,7 @@ const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
